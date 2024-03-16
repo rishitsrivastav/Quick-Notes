@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bk1"
+    android:backgroundTintMode="add"
+    android:fillViewport="true"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5">
+
+        <RelativeLayout
+            android:layout_width="412dp"
+            android:layout_height="735dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            app:layout_constraintVertical_bias="0.256">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="19dp"
+                android:layout_marginEnd="74dp"
+                android:fontFamily="@font/berkshire_swash"
+                android:text="Take Your Notes"
+                android:textColor="#0B0A0A"
+                android:textSize="40dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="338dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView2"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="52dp"
+                android:layout_marginEnd="51dp"
+                android:alpha="0"
+                android:fontFamily="@font/acme"
+                android:text="vrveeeve"
+                android:textColor="#0C0B0B"
+                android:textSize="23dp" />
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView2"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="47dp"
+                android:ems="10"
+                android:fontFamily="@font/alegreya_sans_medium_italic"
+                android:gravity="start|top"
+                android:hint="Note 1"
+                android:inputType="textMultiLine"
+                android:maxLines="5"
+                android:overScrollMode="always"
+                android:scrollbarStyle="insideInset"
+                android:scrollbars="vertical"
+                android:textColor="#090808"
+                android:textSize="22dp" />
+
+            <Button
+                android:id="@+id/save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView2"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="51dp"
+                android:layout_marginEnd="34dp"
+                android:layout_toEndOf="@+id/editText"
+                android:layout_toRightOf="@id/editText"
+                android:backgroundTint="#1E1E1E"
+                android:text="Save" />
+
+            <Button
+                android:id="@+id/delete"
+                android:layout_width="104dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="137dp"
+                android:layout_marginTop="26dp"
+                android:layout_marginEnd="166dp"
+                android:alpha="0"
+                android:backgroundTint="#1E1E1E"
+                android:text="Delete" />
+
+            <EditText
+                android:id="@+id/editTextb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="146dp"
+                android:ems="10"
+                android:fontFamily="@font/alegreya_sans_medium_italic"
+                android:gravity="start|top"
+                android:hint="Note 2"
+                android:inputType="textMultiLine"
+                android:maxLines="5"
+                android:overScrollMode="always"
+                android:scrollbarStyle="insideInset"
+                android:scrollbars="vertical"
+                android:textColor="#090808"
+                android:textSize="22dp" />
+
+            <TextView
+                android:id="@+id/textb"
+                android:layout_width="372dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="153dp"
+                android:layout_marginEnd="51dp"
+                android:alpha="0"
+                android:fontFamily="@font/acme"
+                android:textColor="#0C0B0B"
+                android:textSize="23dp" />
+
+            <Button
+                android:id="@+id/saveb"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="146dp"
+                android:layout_marginEnd="30dp"
+                android:layout_toEndOf="@+id/editTextb"
+                android:backgroundTint="#1E1E1E"
+                android:text="Save" />
+
+            <Button
+                android:id="@+id/deleteb"
+                android:layout_width="108dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textb"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="136dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="163dp"
+                android:alpha="0"
+                android:backgroundTint="#1E1E1E"
+                android:text="Delete" />
+
+            <EditText
+                android:id="@+id/editTextc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textb"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="9dp"
+                android:layout_marginTop="138dp"
+                android:ems="10"
+                android:fontFamily="@font/alegreya_sans_medium_italic"
+                android:gravity="start|top"
+                android:hint="Note 3"
+                android:inputType="textMultiLine"
+                android:maxLines="5"
+                android:overScrollMode="always"
+                android:scrollbarStyle="insideInset"
+                android:scrollbars="vertical"
+                android:textColor="#090808"
+                android:textSize="22dp" />
+
+            <TextView
+                android:id="@+id/textc"
+                android:layout_width="372dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textb"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="145dp"
+                android:layout_marginEnd="51dp"
+                android:alpha="0"
+                android:fontFamily="@font/acme"
+                android:text="bbnttgngn"
+                android:textColor="#0C0B0B"
+                android:textSize="23dp" />
+
+            <Button
+                android:id="@+id/savec"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textb"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="148dp"
+                android:layout_marginEnd="27dp"
+                android:layout_toEndOf="@+id/editTextc"
+                android:backgroundTint="#1E1E1E"
+                android:text="Save" />
+
+            <Button
+                android:id="@+id/deletec"
+                android:layout_width="115dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textc"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="138dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="154dp"
+                android:alpha="0"
+                android:backgroundTint="#1E1E1E"
+                android:text="Delete" />
+
+            <TextView
+                android:id="@+id/line2"
+                android:layout_width="399dp"
+                android:layout_height="24dp"
+                android:layout_below="@+id/deleteb"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginEnd="3dp"
+                android:text="-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------" />
+
+            <TextView
+                android:id="@+id/line1"
+                android:layout_width="399dp"
+                android:layout_height="24dp"
+                android:layout_below="@+id/delete"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="22dp"
+                android:layout_marginEnd="2dp"
+                android:text="-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------" />
+        </RelativeLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
